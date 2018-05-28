@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/fragmentaccount_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/fragmentaccount_textview_name"
+        android:text="이름이름"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragmentaccount_imageview"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/fragmentaccount_linearlayout_1st"
+        android:layout_below="@id/fragmentaccount_textview_name"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragmentaccount_textview_email_lable"
+        android:layout_below="@id/fragmentaccount_linearlayout_1st"
+        android:text="E - Mail : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/fragmentaccount_textview_email"
+        android:layout_below="@id/fragmentaccount_linearlayout_1st"
+        android:layout_toRightOf="@id/fragmentaccount_textview_email_lable"
+        android:text="asdasd@qwecqecq.com"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:id="@+id/fragmentaccount_linearlayout_2nd"
+        android:layout_below="@id/fragmentaccount_textview_email"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="16dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragmentaccount_btn_test"
+        android:text="실험실"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/accountfragment_button_comment"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/accountfragment_button_comment"
+        android:text="상태 메세지 설정"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

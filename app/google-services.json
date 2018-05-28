@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "545769461553",
+    "firebase_url": "https://seekeschat.firebaseio.com",
+    "project_id": "seekeschat",
+    "storage_bucket": "seekeschat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545769461553:android:4706a8e87d93de14",
+        "android_client_info": {
+          "package_name": "www.seekerslab.com.seekeschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545769461553-dtea344dabbjo3poe6tgsm94p6i5h8pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "www.seekerslab.com.seekeschat",
+            "certificate_hash": "87f2fad15a2f021e77c536b0bfcf0163b0399f4f"
+          }
+        },
+        {
+          "client_id": "545769461553-jtmmi3ppairrng08rke1vc3mf3l1l5in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2raca2mIzHQKEalcVFq5vbobzJgTM-zc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545769461553-jtmmi3ppairrng08rke1vc3mf3l1l5in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

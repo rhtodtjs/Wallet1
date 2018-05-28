@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000"
+    tools:context=".LockActivity">
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/seekers_logo_white"/>
+
+
+
+    <TextView
+        android:id="@+id/lockactivity_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/lock_view"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        android:text="패턴을 정의해 주세요"/>
+
+    <com.reginald.patternlockview.PatternLockView
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/lock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:lock_size="3"
+        app:lock_enableVibrate="true"
+        app:lock_vibrateTime="100"
+        app:lock_lineColor="#a2ffffff"
+        app:lock_lineWidth="8dp"
+        app:lock_nodeSize="40dp"
+        app:lock_nodeTouchExpand="15dp"
+        app:lock_nodeSrc="@drawable/pattern_lock_circle_node_normal"
+        app:lock_nodeHighlightSrc="@drawable/pattern_lock_circle_node_highlighted"
+        app:lock_nodeOnAnim="@anim/pattern_lock_node_anim_larger"
+        app:lock_autoLink="true"
+        android:layout_marginBottom="50dp"
+        app:lock_lineErrorColor="#b2880000"
+        app:lock_nodeCorrectSrc="@drawable/pattern_lock_circle_node_correct"
+        app:lock_nodeErrorSrc="@drawable/pattern_lock_circle_node_error"
+        app:lock_lineCorrectColor="#b2008800"
+        />
+
+</RelativeLayout>

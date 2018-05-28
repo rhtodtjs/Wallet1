@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="www.seekerslab.com.seekeschat.LoginActivity"
+    android:padding="16dp">
+
+
+
+    <ImageView
+        android:src="@drawable/seekers_logo_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginactivity_textinputlayout"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/loginactivity_textinputlayout"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/loginactivity_edittext_id"
+            android:hint="아이디"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/loginactivity_textinputlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginactivity_textinputlayout">
+
+        <EditText
+            android:id="@+id/loginactivity_edittext_password"
+            android:hint="패스워드"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_below="@+id/loginactivity_textinputlayout2"
+        android:text="로그인"
+        android:padding="8dp"
+        android:id="@+id/loginactivity_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/loginactivity_button_login"
+        android:text="회원가입"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/loginactivity_button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

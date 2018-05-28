@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/testactivity_toggle"
+        android:layout_centerInParent="true"
+        android:text="화면 잠금"/>
+
+    <ToggleButton
+        android:id="@+id/testactivity_toggle"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:textOn="설정"
+        android:textOff="해제"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/testactivity_btn"
+        android:text="실험2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
